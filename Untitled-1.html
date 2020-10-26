@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+	<head>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Demo page for NASA APP</title>
+		<style>
+			
+			body{
+				background-color: black;
+				overflow-x: hidden;
+			}
+			header img{
+				width: 141px;
+				height: 80px;
+				position: fixed;
+				float: left;
+				z-index: 999999;
+			}
+			header{
+				background-color: black;
+							
+			}
+			.nav {
+    			
+    			height: 80px;
+				position: fixed;
+				left: 150px;
+				
+			}
+		
+			
+			.nav a{
+     			float:left;
+    			text-decoration: none;
+    			padding: 32px 13.3px;
+    			
+        		color: aliceblue;
+				background: linear-gradient(50deg, transparent 0%, black 100%)
+			}
+			.nav a:hover{
+    				 background: linear-gradient(to bottom left, #0000cc 0%, #000066 89%);
+					color: white;
+					box-shadow: 0 0 5px blue, 
+						0 0 25px blue, 
+						0 0 50px blue, 
+						0 0 200px blue,
+						0 0 300px blue,
+						0 0 350px white,
+						0 0 400px white; 
+				  	transition: 0.5s all;
+			}	
+			
+			#particles-js{
+				background-image: url(space-3d-digital-art-planet-wallpaper-preview.jpg);
+				background-repeat: no-repeat;
+				background-size: 100%;
+				
+			}
+			
+			.content{
+				color: aliceblue;
+				width: 100vw;
+				
+			}
+			#particles-js:before{
+				position: absolute;
+				content: '';
+				width: 50%;
+				height: 7.8vw;
+				top: 45.5vw;
+				left: 0;
+				background: black;
+				transform: skewY(7.9deg);
+				
+			}
+			#particles-js:after{
+				position: absolute;
+				content: '';
+				width: 50%;
+				height: 7.8vw;
+				top: 45.5vw;
+				right: 10px;
+				background: black;
+				transform: skewY(-7.9deg);
+			}
+			#arrow{
+				position: absolute;
+				top: 680px;
+				left: 48%;
+				animation: bounce 0.3s ease-in-out infinite alternate;
+				color: white;
+				opacity: 0.3;
+			}
+			
+			#arrow:hover{
+				color: blue;
+				animation: nobounce;
+				opacity: 1.0;
+				
+				cursor: grab;
+			}
+		
+			@keyframes bounce{
+				100%{
+					top: 660px;
+				}
+				
+			}
+			@keyframes nobounce{
+				100%{
+					top: 680px;
+				}
+			}
+			.missions{
+				width: 20vw;
+				background-image: url(113824699-realistic-starry-sky-with-blue-glow-shining-stars-dark-sky-background-wallpaper-night-sky-dark-blue-.jpg);
+				float: left;
+			
+			}
+			
+			li:hover{
+				transform: scale(1.1);	
+					box-shadow: 0 0 5px blue, 
+						0 0 25px blue, 
+						0 0 50px blue, 
+						0 0 200px blue,
+						0 0 300px blue,
+						0 0 350px white,
+						0 0 400px white; 
+				  	transition: 0.7s all;
+			}
+			
+			.main_cotents{
+				width: 80vw;
+				float: right;
+				
+			}
+			
+			h3, h4{
+				text-align: center;
+			}
+			
+			
+			article{
+				transition: transform 0.1s ease-out;
+			}
+			.main_cotents article img{
+				width: 100%;
+				height: 400px;
+				
+			}
+			.main_cotents article p{
+				font-weight: 1000;
+				font-size: 30px;
+			}
+			
+			
+			article:hover{
+				transform: scale(1.1);
+				box-shadow: 0 0 5px black, 
+						0 0 30px black, 
+						0 0 50px black, 
+						0 0 80px white; 
+				 
+				transition: 0.7s all;
+			}
+			#star{
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				left: 1300px;
+				top: 9px;
+		
+			}
+			#star:hover{
+				transform: scale(1.1);
+					box-shadow: 0 0 5px black, 
+						0 0 30px black, 
+						0 0 50px black, 
+						0 0 80px white; 
+				 
+				transition: 0.7s all;
+			}
+		
+		</style>
+	</head>
+ 
+	
+<body>
+	  	
+	
+	  <header>
+	  		<img src="article_pic_5-4.jpg">
+			<div class="nav">
+               
+				<a href="video.html"><strong>VIDEOS</strong></a>
+                <a href="awards.html"><strong>AWARDS</strong></a>
+                <a href="organization.html"><strong>ORGANISATIONS</strong></a>
+                <a href="competition.html"><strong>COMPETTIONS</strong></a>
+                <a href="news.html"><strong>NEWS</strong></a>
+				<a href="Aboutus.html"><strong>About us</strong></a>
+				<a href="contactus.html"><strong>Contact us</strong></a>
+				<img src="colurstar-removebg-preview.png" id="star">
+			</div>
+		</header>
+		
+	
+	  <div id="particles-js"></div>
+	  <div class="wallpaper" style="padding-top: 10px;">
+			
+		  <i class='fas fa-angle-double-down' id="arrow" style='font-size:48px;' onclick="contents"></i>
+		
+	  </div>
+	<br><br><br><br>
+	  <div class="content">
+	  	<div class="missions">
+			<h3><strong><u>MISSIONS</u></strong></h3>
+				
+			<h4><u>Mission Completd</u></h4>
+			<ol>
+				<li>first</li>
+				<li>second</li>
+				<li>third</li>
+				<li>fourth</li>
+				<li>fifth</li>
+				<li>sixth</li>
+				<li>seventh</li>
+				<li>eighth</li>
+				<li>ninth</li>
+				<li>Ten</li>
+				
+			</ol>
+			
+ 			<h4><u>Current Missions</u></h4>
+			<ol>
+				<li>first</li>
+				<li>second</li>
+				<li>third</li>
+				<li>fourth</li>
+				<li>fifth</li>
+				<li>sixth</li>
+				<li>seventh</li>
+				<li>eighth</li>
+				<li>ninth</li>
+				<li>Ten</li>
+				
+			</ol>
+			
+			<h4><u>Upcoming Missions</u></h4>
+			<ol>
+				<li>first</li>
+				<li>second</li>
+				<li>third</li>
+				<li>fourth</li>
+				<li>fifth</li>
+				<li>sixth</li>
+				<li>seventh</li>
+				<li>eighth</li>
+				<li>ninth</li>
+				<li>Ten</li>
+				
+			</ol>
+			
+		</div>
+		  
+		<div class="main_cotents">
+			
+			
+				<a href="tvandaudio.html"><article style="width: 1110px; border: 10px solid gray; padding: 10px; margin: 20px;" >
+		  		<img src="nasatv.jpg">
+				<p style="text-align: center;">TV and Audio</p>
+				</article>
+				</a>
+			
+			
+				<a href="images.html"><article style="width: 1110px; border: 10px solid gray; padding: 10px; margin: 20px;">
+		  		<img src="gallery.jpg">
+				<p style="text-align: center;">Images</p>
+				</article>
+				</a>
+			
+				<a href="video.html"><article style="width: 1110px; border: 10px solid gray; padding: 10px; margin: 20px;">
+		  		<img src="https___blogs-images.forbes.com_startswithabang_files_2017_06_1-JTMUwFeDxeDp-yi2lqxLLw-1200x820.jpg">
+				<p style="text-align: center;">Videos</p>
+				</article>
+				</a>
+				
+				<a href="news.html"><article style="width: 1110px; border: 10px solid gray; padding: 10px; margin: 20px;">
+		  		<img src="nasanews.jpg">
+				<p style="text-align: center;">Nasa News</p>
+				</article>
+				</a>
+		</div>
+	  </div>
+	
+	  <footer>
+
+	  
+	  </footer>
+	  <script src="particles.js"></script>
+	  <script src="app.js"></script>
+      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		<script>
+	  		var preloader = document.getElementById("loader");
+			
+			function myfunction(){
+				preloader.style.display = 'none';
+			}
+	  	</script>
+  </body>	
+</html>

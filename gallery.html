@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+		
+	<style>
+			*{box-sizing: border-box;}
+			body{
+			 background: linear-gradient(to bottom left, black 20%, darkblue 60%, black 100%);
+			 background-size: 100% 200%;
+			 overflow: hidden;
+			 }
+			header img{
+				width: 141px;
+				height: 80px;
+				position: fixed;
+				float: left;
+				z-index: 1;
+				
+					  }
+			
+			header{
+				background-color: black;
+				width: 100%;
+				
+			      }
+			
+			.nav{
+    			position: fixed;
+				left: 150px;
+				z-index: 1;
+			    }
+		
+			
+			.nav a{
+     			float:left;
+				text-decoration: none;
+    			font-size: 15px;
+    			padding: 32px 13.3px;
+    			
+        		color: aliceblue;
+				background: linear-gradient(50deg, transparent 0%, black 100%);
+				
+			}
+			.nav a:hover{
+    				 background: linear-gradient(to bottom left, #0000cc 0%, #000066 89%);
+					color: white;
+					box-shadow: 0 0 5px blue, 
+						0 0 25px blue, 
+						0 0 50px blue, 
+						0 0 200px blue,
+						0 0 300px blue,
+						0 0 350px white,
+						0 0 400px white; 
+				  	transition: 0.5s all;
+			}	
+			#gll{
+				text-align: center;	
+				color: aliceblue;
+				position: relative;
+				top: 25vh;
+				
+			}
+			#gll:before{
+				content: '';
+				position: absolute;
+				top: -200px;
+				left: -10px;
+				width: 100%;
+				height: 800%;
+				background: #000;
+				opacity: 0.5;
+				border-radius: 0% 0% 100% 100%;
+				
+			}
+			#container1{
+				position: relative;
+				top: 30vh;
+				left: 12vw;
+				margin: 50px;
+				width: 30%;
+				float: left;
+			}
+			#container1:hover{
+			transform: scale(1.1);
+			transition: 0.7s all;
+			}
+			#container1 img{
+				background-color: aqua;
+				width: 100%;
+				opacity: 1;
+			}
+				
+			#er, #er1{ 
+				width: 100%;
+				margin-top: -7px;
+				background-color: aqua;
+				padding:  10px;
+				display: none;
+				text-align: center;
+				transition: 0.7s all;
+				opacity: 1;
+			}
+			
+
+		</style>
+	</head>
+	
+	<body>
+			  <header>
+	  		<img src="article_pic_5-4.jpg">
+			<div class="nav">
+               
+				<a href="Untitled-1.html"><strong>HOME</strong></a>
+                <a href="gallery.html"><strong>GALLERY</strong></a>
+                <a href="awards.html"><strong>AWARDS</strong></a>
+                <a href="competition.html"><strong>COMPETTIONS</strong></a>
+                <a href="news.html"><strong>NEWS</strong></a>
+				<a href="Aboutus.html"><strong>About us</strong></a>
+				<a href="contactus.html"><strong>Contact us</strong></a>
+				
+			</div>
+		</header>
+		<h1 id="gll">GALLERY</h1>
+		<div id="container1">
+			<img id="a" onmouseover="inc()" onmouseout="dec()" src="gallery.jpg">
+			<h1 id="er"> PHOTOS</h1>
+			
+		</div>
+		<div id="container1">
+			<img id="a1" onmouseover="inc1()" onmouseout="dec1()" src="photo-1496715976403-7e36dc43f17b.jpg">
+			<h1 id="er1"> VIDEOS</h1>
+		</div>
+		
+		
+		<script>
+			function inc(){
+				document.getElementById('er').style.display = 'block';
+				document.getElementById('a1').style.opacity = '0';
+			}
+			function dec(){
+				document.getElementById('er').style.display = 'none';
+				document.getElementById('a1').style.opacity = '1';
+			}
+				function inc1(){
+				document.getElementById('er1').style.display = 'block';
+				document.getElementById('a').style.opacity = '0';
+			}
+			function dec1(){
+				document.getElementById('er1').style.display = 'none';
+				document.getElementById('a').style.opacity = '1';
+			}
+		</script>
+	</body>
+
+</html>

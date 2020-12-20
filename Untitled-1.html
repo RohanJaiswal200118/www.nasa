@@ -2,41 +2,49 @@
 <html>
 	<head>
 		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<title>Demo page for NASA APP</title>
 		<style>
-			
-			body{
-				background-color: black;
-				overflow-x: hidden;
+			*{
+				box-sizing: border-box;
 			}
+			
+			body
+			{
+				background-color:black;
+			}
+			
 			header img{
 				width: 141px;
 				height: 80px;
 				position: fixed;
 				float: left;
-				z-index: 999999;
-			}
+				z-index: 1;
+				
+					  }
+			
 			header{
 				background-color: black;
-							
-			}
-			.nav {
-    			
-    			height: 80px;
-				position: fixed;
-				left: 150px;
+				width: 100%;
 				
-			}
+			      }
+			
+			.nav{
+    			position: fixed;
+				left: 150px;
+				z-index: 1;
+			    }
 		
 			
 			.nav a{
      			float:left;
-    			text-decoration: none;
+				text-decoration: none;
+    			font-size: 15px;
     			padding: 32px 13.3px;
     			
         		color: aliceblue;
-				background: linear-gradient(50deg, transparent 0%, black 100%)
+				background: linear-gradient(50deg, transparent 0%, black 100%);
+				
 			}
 			.nav a:hover{
     				 background: linear-gradient(to bottom left, #0000cc 0%, #000066 89%);
@@ -52,23 +60,23 @@
 			}	
 			
 			#particles-js{
+				width: 100%;
+				height: 100vh;
 				background-image: url(space-3d-digital-art-planet-wallpaper-preview.jpg);
-				background-repeat: no-repeat;
-				background-size: 100%;
+				background-size: cover;
 				
 			}
 			
 			.content{
 				color: aliceblue;
-				width: 100vw;
-				
+					
 			}
 			#particles-js:before{
 				position: absolute;
 				content: '';
 				width: 50%;
 				height: 7.8vw;
-				top: 45.5vw;
+				top: 92vh;
 				left: 0;
 				background: black;
 				transform: skewY(7.9deg);
@@ -79,10 +87,11 @@
 				content: '';
 				width: 50%;
 				height: 7.8vw;
-				top: 45.5vw;
+				top: 92vh;
 				right: 10px;
 				background: black;
 				transform: skewY(-7.9deg);
+				
 			}
 			#arrow{
 				position: absolute;
@@ -97,7 +106,6 @@
 				color: blue;
 				animation: nobounce;
 				opacity: 1.0;
-				
 				cursor: grab;
 			}
 		
@@ -112,8 +120,12 @@
 					top: 680px;
 				}
 			}
+			
+
+			
 			.missions{
-				width: 20vw;
+				width: 20%;
+				
 				background-image: url(113824699-realistic-starry-sky-with-blue-glow-shining-stars-dark-sky-background-wallpaper-night-sky-dark-blue-.jpg);
 				float: left;
 			
@@ -129,30 +141,33 @@
 						0 0 350px white,
 						0 0 400px white; 
 				  	transition: 0.7s all;
-			}
+			} 
 			
 			.main_cotents{
-				width: 80vw;
-				float: right;
+				position: relative;
+				width: 80%;
+				margin: 0px;
+				padding: 0px;
+				float: left;
 				
 			}
 			
-			h3, h4{
+			.missions h3, h4{
 				text-align: center;
 			}
 			
 			
-			article{
-				transition: transform 0.1s ease-out;
-			}
+		
 			.main_cotents article img{
 				width: 100%;
 				height: 400px;
 				
 			}
 			.main_cotents article p{
-				font-weight: 1000;
+				
 				font-size: 30px;
+				color: aliceblue;
+				text-decoration: none
 			}
 			
 			
@@ -169,8 +184,8 @@
 				width: 50px;
 				height: 50px;
 				position: absolute;
-				left: 1300px;
-				top: 9px;
+				left: 180%;
+				top: 2vh;
 		
 			}
 			#star:hover{
@@ -181,6 +196,113 @@
 						0 0 80px white; 
 				 
 				transition: 0.7s all;
+			}
+			
+				
+			@media screen and (max-width: 768px){
+				
+			.nav {
+    			left: 100px;
+				
+			}
+				
+			.nav a{
+     			padding: 25px 8px;
+				font-size: 12px;
+        		color: aqua;
+			}
+			
+			header img{
+				width: 90px;
+				height: 63px;
+				position: fixed;
+				float: left;
+				z-index: 99999;
+			}
+			
+			#particles-js{
+				width: auto;
+				background-image: url(768.jpg);
+				background-size: auto;
+			}
+				
+			#particles-js:before{
+				
+				
+				height: 13vh;
+				
+				
+			}
+			#particles-js:after{
+				height: 13vh;
+				
+			}
+			
+			#star{
+				width: 40px;
+				height: 40px;
+				left: 110%;
+			}
+				
+			.missions h3, h4, li{
+				font-size: 13px;
+			}
+			
+			.main_cotents article img{
+				width: 100%;
+				height: 200px;
+				
+			}
+			
+			.main_cotents article p{
+				
+				font-size: 20px;
+				color: aliceblue;
+				text-decoration: none
+			}
+			
+			
+		
+			}
+				
+			@media screen and (max-width: 425px){
+				
+			.nav {
+    			left: 50px;
+				
+			}
+				
+			.nav a{
+     			padding: 8px;
+				font-size: 1px;
+        		color: green;
+			}
+			
+			header img{
+				width: 90px;
+				height: 63px;
+				position: fixed;
+				float: left;
+				z-index: 99999;
+			}
+		
+			#particles-js:before{
+				
+				
+				height: 13vh;
+				
+				
+			}
+			#particles-js:after{
+				height: 13vh;
+				
+			}
+			
+			#star{
+				width: 40px;
+				height: 40px;
+				left: 110%;
+			}
 			}
 		
 		</style>
@@ -194,9 +316,9 @@
 	  		<img src="article_pic_5-4.jpg">
 			<div class="nav">
                
-				<a href="video.html"><strong>VIDEOS</strong></a>
+				<a href="Untitled-1.html"><strong>HOME</strong></a>
+                <a href="gallery.html"><strong>GALLERY</strong></a>
                 <a href="awards.html"><strong>AWARDS</strong></a>
-                <a href="organization.html"><strong>ORGANISATIONS</strong></a>
                 <a href="competition.html"><strong>COMPETTIONS</strong></a>
                 <a href="news.html"><strong>NEWS</strong></a>
 				<a href="Aboutus.html"><strong>About us</strong></a>
@@ -209,11 +331,11 @@
 	  <div id="particles-js"></div>
 	  <div class="wallpaper" style="padding-top: 10px;">
 			
-		  <i class='fas fa-angle-double-down' id="arrow" style='font-size:48px;' onclick="contents"></i>
+		 <a href="#scroll"> <i class='fas fa-angle-double-down' id="arrow" style='font-size:48px;' onclick="contents" ></i></a>
 		
 	  </div>
 	<br><br><br><br>
-	  <div class="content">
+	  <div class="content" id="scroll">
 	  	<div class="missions">
 			<h3><strong><u>MISSIONS</u></strong></h3>
 				
@@ -265,28 +387,23 @@
 		</div>
 		  
 		<div class="main_cotents">
+			 
 			
-			
-				<a href="tvandaudio.html"><article style="width: 1110px; border: 10px solid gray; padding: 10px; margin: 20px;" >
-		  		<img src="nasatv.jpg">
-				<p style="text-align: center;">TV and Audio</p>
+				<a href="tvandaudio.html"><article style="border: 2px solid gray; margin: 3px;" >
+		  		<img src="hqdefault.jpg">
+				<p style="text-align: center;">NASA at Home</p>
 				</article>
 				</a>
 			
 			
-				<a href="images.html"><article style="width: 1110px; border: 10px solid gray; padding: 10px; margin: 20px;">
-		  		<img src="gallery.jpg">
-				<p style="text-align: center;">Images</p>
-				</article>
-				</a>
 			
-				<a href="video.html"><article style="width: 1110px; border: 10px solid gray; padding: 10px; margin: 20px;">
+				<a href="video.html"><article style="border: 2px solid gray; margin: 3px;">
 		  		<img src="https___blogs-images.forbes.com_startswithabang_files_2017_06_1-JTMUwFeDxeDp-yi2lqxLLw-1200x820.jpg">
-				<p style="text-align: center;">Videos</p>
+				<p style="text-align: center;text-decoration: none;">Gallery</p>
 				</article>
 				</a>
-				
-				<a href="news.html"><article style="width: 1110px; border: 10px solid gray; padding: 10px; margin: 20px;">
+				 
+				<a href="https://www.nasa.gov/news/releases/latest/index.html"><article style="border: 2px solid gray; margin: 3px;">
 		  		<img src="nasanews.jpg">
 				<p style="text-align: center;">Nasa News</p>
 				</article>
@@ -295,7 +412,7 @@
 	  </div>
 	
 	  <footer>
-
+		  	 
 	  
 	  </footer>
 	  <script src="particles.js"></script>

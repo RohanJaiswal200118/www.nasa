@@ -1,8 +1,336 @@
 <!doctype html>
 <html>
+	
 	<head>
-			<title><b><i>About us</i></b></title>
+		<title>About us</title>
+		<style>*{
+			box-sizing: border-box;
+			margin: 0px;
+			padding: 0px;
+			}
+			
+			body{
+				overflow-x: hidden;
+				background-color: black
+			}
+			header img{
+				width: 141px;
+				height: 80px;
+				position: fixed;
+				float: left;
+				z-index: 1;
+				
+					  }
+			
+			header{
+				background-color: black;
+				width: 100%;
+				
+			      }
+			
+			.nav{
+    			position: fixed;
+				left: 150px;
+				z-index: 1;
+			    }
+		
+			
+			.nav a{
+     			float:left;
+				text-decoration: none;
+    			font-size: 15px;
+    			padding: 32px 13.3px;
+    			
+        		color: aliceblue;
+				background: linear-gradient(50deg, transparent 0%, black 100%);
+				
+			}
+			.nav a:hover{
+    				 background: linear-gradient(to bottom left, #0000cc 0%, #000066 89%);
+					color: white;
+					box-shadow: 0 0 5px blue, 
+						0 0 25px blue, 
+						0 0 50px blue, 
+						0 0 200px blue,
+						0 0 300px blue,
+						0 0 350px white,
+						0 0 400px white; 
+				  	transition: 0.5s all;
+			}	
+				.About p{
+				position: absolute;
+				top: 25vh;
+				padding: 40px;
+				font-size: 2em;
+				font-family:cursive;
+				color: yellow;
+					z-index:0; 
+			}
+			.About p:before{
+				content: '';
+				position: absolute;
+				top: -185px;
+				left: 0px;
+				width: 100%;
+				height: 250%;
+				background: #000;
+				opacity: 0.5;
+				border-radius: 0% 0% 100% 100%;
+				z-index: 99999;
+			}
+			.About h1{
+				position: absolute;
+				top: 70vh;
+				font-size: 3em;
+				left: 28%;
+				color: brown;
+				font-family:cursive;
+			}
+			
+				#particles-js{
+				 background: linear-gradient(to bottom left, black 20%, darkblue 60%, black 100%);
+			
+					background-repeat: repeat-y;
+				position: relative;				
+			
+			}
+				#arrow{
+				
+				animation: bounce 0.3s ease-in-out infinite alternate;
+				
+				opacity: 0.3;
+			}
+			
+			#arrow:hover{
+				color: blue;
+				animation: nobounce;
+				opacity: 1.0;
+				cursor: grab;
+			}
+		
+			@keyframes bounce{
+				100%{
+					top: 660px;
+				}
+				
+			}
+			@keyframes nobounce{
+				100%{
+					top: 680px;
+				}
+			}
+			
+			.Himanshu{
+				width: 100%;
+				height: 790px;
+				 background: linear-gradient(to bottom left, black 20%, darkblue 60%, black 100%);
+				position: relative;
+			}
+			.Himanshu img{
+				position: absolute;
+				top: 15vh;
+				width: 30%;
+				height: 500px;
+				border-radius: 100%;
+				border: 5px solid black;
+				box-shadow: 0 0 0px blue, 
+						0 10px 0px white;
+				
+				
+			}
+			.Himanshu h1{
+				position: absolute;
+				top: 15vh;
+				left: 35vw;
+				font-size: 3em;
+				color:#fff;
+			}
+			.Himanshu p{
+				position: absolute;
+			
+				top: 15vh;
+				
+				right: 50px;
+				width: 60%;
+				margin-top: 100px;
+				
+				font-size: 2.4em;
+				font-family:cursive;
+				color: #fff;
+				
+			}
+			
+			.Rohan{
+				margin-top: 50px;
+				width: 100%;
+				height: 800px;
+				 background: linear-gradient(to bottom left, black 20%, darkblue 60%, black 100%);
+				position: relative;
+			}
+			.Rohan img{
+				position: absolute;
+				top: 25vh;
+				right: 20px;
+				border-radius: 60%;
+				width: 30%;
+				border-radius: 100%;
+				border: 5px solid black;
+				box-shadow: 0 0 0px blue, 
+						0 10px 0px white;
+				
+			}
+			.Rohan h1{
+				color:#fff;
+				position: absolute;
+				left: 5vw;
+				top: 17vh;
+				font-size: 3em;
+				font-family:cursive;
+			}
+			.Rohan p{
+				color: #fff;
+				position: absolute;
+				font-size: 2.4em;
+				top: 30vh;
+				left: 50px;
+				width: 60%;
+				font-family:cursive;
+				
+			}
+			.Yash{
+				margin-top: 50px;
+				width: 100%;
+				height: 700px;
+				 background: linear-gradient(to bottom left, black 20%, darkblue 60%, black 100%);
+				position: relative;
+			}
+			.Yash img{
+				position: absolute;
+				top: 15vh;
+				border-radius: 100%;
+				border: 5px solid black;
+				box-shadow: 0 0 0px blue, 
+						0 10px 0px white;
+				width: 30%;
+				float: left;
+			}
+	
+			.Yash h1{
+				position: absolute;
+				top: 15vh;
+				left: 35vw;
+				font-size: 3em;
+				color:#fff;
+				
+			}
+			.Yash p{
+				
+				position: absolute;
+				top: 15vh;				
+				right: 50px;
+				width: 60%;
+				margin-top: 100px;
+				font-size: 2.4em;
+				font-family:cursive;
+				color: #fff;
+			}
+			.Ritendra{
+				margin-top: 50px;
+				width: 100%;
+				height: 750px;
+				background: linear-gradient(to bottom left, black 20%, darkblue 60%, black 100%);
+				position: relative;
+			}
+			.Ritendra img{
+				position: absolute;
+				top: 25vh;
+				right: 20px;
+				border-radius: 60%;
+				width: 30%;
+				border-radius: 100%;
+				border: 5px solid black;
+				box-shadow: 0 0 0px blue, 
+						0 10px 0px white;
+				
+			}
+			.Ritendra h1{
+				color:#fff;
+				position: absolute;
+				left: 5vw;
+				top: 17vh;
+				font-size: 3em;
+				font-family:cursive;
+			}
+			.Ritendra p{
+				color: #fff;
+				position: absolute;
+				font-size: 2.4em;
+				top: 30vh;
+				left: 50px;
+				width: 60%;
+				font-family:cursive;
+				
+			}
+		
+		</style>
 	</head>
-		<body>
-		</body>
+	<body>
+		  <header>
+	  		<img src="article_pic_5-4.jpg">
+			<div class="nav">
+               
+				<a href="Untitled-1.html"><strong>HOME</strong></a>
+                <a href="gallery.html"><strong>GALLERY</strong></a>
+                <a href="awards.html"><strong>AWARDS</strong></a>
+                <a href="competition.html"><strong>COMPETTIONS</strong></a>
+                <a href="news.html"><strong>NEWS</strong></a>
+				<a href="Aboutus.html"><strong>About us</strong></a>
+				<a href="contactus.html"><strong>Contact us</strong></a>
+				
+			</div>
+		</header>
+		
+		<div id="particles-js"></div>
+		
+		<div class="container">
+			
+			<div class="About">
+				<p>NASA is a U.S. government agency that is responsible for science and technology related to air and space. The Space Age started in 1957 with the launch of the Soviet satellite Sputnik. ... The agency was created to oversee U.S. space exploration and aeronautics research. </p>
+				<br>
+				<br>
+				<br>
+				<h1><strong>Team Behind Nasa & Contest</strong></h1>
+				  <i class='fas fa-angle-double-down' id="arrow" style='font-size:48px; position: absolute; top: 86vh; color: white; left: 45vw' ></i>
+			</div>
+			
+			<div class="Himanshu">
+				<img src="himanshu%20jpg.jpg">
+				<strong><u><i><h1>Himanshu Agarwal</h1></i></u></strong>
+				<p>You can call him the other founder of Demo NASA. He is the man behind all the implentations of sketchy ideas. He participated as the mentor for the whole team. Himanshu is pursuing his Btech in IT. Himanshu is one of the master brains in the team. Including he is also a very good in C, C++, Python & He is running his Business also in his Home District(Azamgarh).</p>
+			</div>
+			
+			<div class="Rohan">
+				<img src="rohan.jpeg">
+				<strong><u><i><h1>Rohan Jaiswal</h1></i></u></strong>
+				<p>He is a backbone to the team. Rohan is a tech enthusiast, exploring in the field of Web devlopment and Programming Languages like C & Python . He is in third  year of his Undergraduate program pursuing in field of Information Technology.  He is continusly working on differnt projects associated with Web Development. You can find his work On Github. His contribution in Team was exceptionally overwhiling. He is the main coder of our team.</p>
+			</div>
+		
+			<div class="Yash">
+				<img src="yash.jpeg">
+				<strong><u><i><h1>Yash Mishra</h1></i></u></strong>
+				<p> The man is a privelage of the team. With his unusually good communication he is posting Nasa & contest in front of masses. He is a Information Technology Student  and Pursuing his Btech 2nd Year. He has a keen interest in Web Development he is also a coder of our team.</p>
+			</div>
+			
+			<div class="Ritendra">
+				<img src="ritendra.jpeg">
+				<strong><u><i><h1>Ritendra Singh Bhadauriya</h1></i></u></strong>
+				<p>Ritendra is the men behind Missions & Logo part. He is a tech enthusiast and her interest landed her to be a Information Technology student. Currently He is pursuing her B.Tech in 2nd year. His content made her a part of a prominent part of the Team.</p>
+			</div>
+			</div>
+			
+		      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+		<script src="particles.js"></script>
+		<script src="app.js"></script>
+	</body>
 </html>
